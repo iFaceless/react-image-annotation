@@ -13,24 +13,26 @@ const Main = styled.main`
   margin-top: 51px;
 `
 
-export default () => (
-  <Router basename='/react-image-annotation'>
-    <Root>
-      <NavBar
-        title='react-image-annotation'
-      />
-      <Main>
-        <Route
-          exact
-          path='/'
-          component={Home}
+export default () => {
+  return (
+    <Router basename='/react-image-annotation'>
+      <Root>
+        <NavBar
+          title='react-image-annotation'
         />
-        <Route
-          path='/docs'
-          component={Docs}
-        />
-      </Main>
-      <Footer />
-    </Root>
-  </Router>
-)
+        <Main>
+          <Route
+            exact
+            path='/'
+            component={Home}
+          />
+          <Route
+            path='/docs'
+            component={Docs}
+          />
+        </Main>
+        <Footer />
+      </Root>
+    </Router>
+  )
+}

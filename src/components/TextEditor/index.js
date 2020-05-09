@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 const Inner = styled.div`
   padding: 8px 16px;
@@ -35,11 +36,13 @@ const Button = styled.div`
 `
 
 function TextEditor (props) {
+  const { t } = useTranslation()
+
   return (
     <React.Fragment>
       <Inner>
         <textarea
-          placeholder='Write description'
+          placeholder={t('editor.placeholder')}
           onFocus={props.onFocus}
           onBlur={props.onBlur}
           onChange={props.onChange}
