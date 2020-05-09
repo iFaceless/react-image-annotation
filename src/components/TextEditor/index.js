@@ -54,7 +54,7 @@ function TextEditor (props) {
         <Button
           onClick={props.onSubmit}
         >
-          Submit
+          {t('editor.submit')}
         </Button>
       )}
     </React.Fragment>

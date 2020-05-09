@@ -6,7 +6,8 @@ const RESOURCES = {
     en: {
         trans: {
             editor: {
-                placeholder: "Write description"
+                placeholder: "Write description",
+                submit: 'Submit'
             },
             overlayPoint: "Click to Annotate",
             overlayDefault: "Click and Drag to Annotate",
@@ -15,7 +16,8 @@ const RESOURCES = {
     zh: {
         trans: {
             editor: {
-                placeholder: "填写标签"
+                placeholder: "填写标签",
+                submit: '提交'
             },
             overlay: {
                 point: "点击进行标注",
