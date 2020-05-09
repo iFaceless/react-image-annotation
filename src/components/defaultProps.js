@@ -7,6 +7,7 @@ import Rectangle from './Rectangle'
 import Oval from './Oval'
 import Content from './Content'
 import Overlay from './Overlay'
+import { Trans } from 'react-i18next'
 
 import {
   RectangleSelector,
@@ -101,13 +102,13 @@ export default {
       case PointSelector.TYPE:
         return (
           <Overlay>
-            Click to Annotate
+            <Trans i18nKey="overlay.point"></Trans>
           </Overlay>
         )
       default:
         return (
           <Overlay>
-            Click and Drag to Annotate
+            <Trans i18nKey="overlay.default"></Trans>
           </Overlay>
         )
     }
